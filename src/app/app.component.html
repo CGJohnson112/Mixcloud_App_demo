@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+  <!--https://raw.githubusercontent.com/CGJohnson112/Mixcloud_API/master/db.json-->
+  <h2>Music</h2>
+  <table class ="table table-striped">
+    <tr *ngFor = "let music of lstmusic">
+      <td>{{music.id}}</td>
+      <td><a href="{{music.link}}">{{music.track}}</a></td>
+      <td><img class="image" src="assets/music_cover/{{music.label}}"/></td>
+      
+    </tr>
+  </table>
+
+
+<router-outlet></router-outlet>
